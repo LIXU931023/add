@@ -1,0 +1,91 @@
+@charset "utf-8";
+body,h1,h2,h3,h4,h5,h6,p,dl,dd,ul,ol,form,input,fieldset,th,td,iframe{margin:0; padding:0;}
+h1,h2,h3,h4,h5,h6,strong,b{font-weight:normal;}
+i,em{font-style:normal;}
+a{text-decoration:none; color:#666;}
+li{list-style:none;}
+img{vertical-align: top;}
+input{vertical-align:top;border:none;}
+a,input,area{outline:none;}
+body{font-size:14px; font-family:"微软雅黑";}
+
+#head{
+	height:76px;background: #303030;
+}
+.logo{
+	padding: 18px 0 0 27px;float: left;
+}
+.right_head{
+	float: right;height:100%;
+}
+.right_head li{float:left;text-align: center;color:white;height:66px;width:90px;padding-top:10px;cursor: pointer;}
+.right_head li:hover{background: #575757;}
+.right_head li dd{font-size:12px;}
+.right_head li dd.more{color:yellow;}
+.right_head li i.iconfont{font-size: 28px;}
+#nav{
+	height:42px;background:#575757 ;line-height: 42px;padding-left:20px;
+}
+#nav li{float: left;color: white;height: 100%;padding: 0 10px;}
+#nav li:hover{background: #666666;}
+#nav li i.iconfont{margin-right: 12px;}
+#nav li span.count{display: inline-block;height:20px;width:30px;border-radius: 50%;vertical-align: middle;line-height: 20px;text-align: center;margin-left:5px;}
+.side_nav{
+	height:400px;width:164px;float:left;
+}
+.side_nav li{width:164px;border-bottom: 1px solid #DDDDDD;height:42px;line-height: 42px;background: #575757;color: white;cursor: pointer;}
+.side_nav li.one{background: #303030;padding-left:27px;width:137px;}
+.side_nav li.two{text-align: center;}
+.side_nav li .left{padding:0 14px 0 10px}
+.side_nav li .right{padding-left:30px;}
+.side_right{
+	margin-left:170px;background: #ebebeb;padding: 10px 0 0 10px;position: relative;
+}
+.side_right h3{height:40px;font-size:23px;line-height: 40px;border-bottom:1px solid #DDDDDD;padding-left: 10px;}
+.side_right h3.small{font-size:16px;border-color: #303030;}
+.side_right h3.small span{color:red}
+.middle{background: #ebebeb;overflow: hidden;}
+.details{display: inline-block;}
+.first{width:255px;height:80px;color: white;background: blue;float: left;margin: 10px 10px 15px 0;}
+.senond{background: #28b779;}
+.third{background: #852b99;}
+.four{background: #ffb848;}
+.first .iconfont{font-size:50px;margin-right: 90px;margin-left: 10px;display: block;float: left;margin-top: 10px;}
+.first dl{float:right}
+.first dd{font-size:25px;text-align: center;margin-top: 10px;}
+.first dt{margin-top:10px;}
+.five{background: white;border: 1px solid #303030;width: 164px;height:58px;color:black}
+.five .iconfont{font-size:30px;margin-right: 18px;margin: 13px 13px 0 13px;}
+.five dl{width:90px;height:58px;border-left: 1px solid #303030;padding-left: 12px;}
+.five dd{font-size:20px;margin:0;text-align: left;}
+.index{display: none;}
+.top{
+	height:40px;width:100%;line-height: 40px;
+}
+h4{float:left;font-size:18px;}
+h5{float:right;font-size:16px;background: #FF0000;width:130px;height: 30px;border-radius: 5px;text-align: center;line-height: 30px;color:white;margin-right: 20px;margin-top:5px;cursor: pointer;}
+p{height:40px;width:100%;vertical-align: middle;}
+p input{width:100px;height:30px;margin: 0 5px;font-size:18px;border-radius: 5px;}
+p button{width:60px;height:30px;background: red;border-radius: 5px;border:none;cursor: pointer;color:white;}
+table.tab{border-collapse: collapse;}
+
+.tab tr{width:100%;height:40px;}
+.tab td{width:90px;height:40px;border:1px solid;line-height: 40px;text-align: center;}
+.tab td input{vertical-align: middle;}
+.footer{height:40px;width:100%;}
+.footer h3{height:100%;vertical-align: middle;float: left;font-size:14px;margin-left: 550px;}
+.footer h3 input{vertical-align: middle;width: 30px;height:20px;margin:0 5px;border-radius: 5px;}
+.footer ul{float:right;padding-right:10px;}
+.footer li{height: 100%;line-height: 40px;float:left;margin:0 3px;}
+.list{display: none;}
+.list_nav{padding-left:10px;overflow: hidden;}
+.list_nav li{float:left;height:40px;line-height: 40px;font-size:16px;margin:0 15px;}
+.list_message{padding-left:90px;background: #DDDDDD;width: 100%;}
+.list_message tr{height:25px;}
+.list_message td{padding: 3px 0;}
+
+table.list_message td input{width:100px;height: 23px;margin:0 3px;}
+table.list_message td .btn{width:90px;height:25px;border-radius: 4px;background: red;color:white;margin:0 5px;}
+table.list_message .left-td{width: 180px;text-align: right;padding-right: 20px;}
+
+

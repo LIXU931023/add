@@ -1,0 +1,45 @@
+@charset "utf-8";
+body,h1,h2,h3,h4,h5,h6,p,dl,dd,ul,ol,form,input,fieldset,th,td,iframe{margin:0; padding:0;}
+h1,h2,h3,h4,h5,h6,strong,b{font-weight:normal;}
+i,em{font-style:normal;}
+a{text-decoration:none; color:#666;}
+li{list-style:none;}
+img{vertical-align: top;}
+input{vertical-align:top;border:none;}
+a,input,area{outline:none;}
+body{font-size:14px; font-family:"微软雅黑";}
+#big{width: 900px;height: auto;}
+.top{
+	height:40px;width:100%;line-height: 40px;
+}
+h4{float:left;font-size:18px;}
+h5{float:right;font-size:16px;background: #FF0000;width:130px;height: 30px;border-radius: 5px;text-align: center;line-height: 30px;color:white;margin-right: 20px;margin-top:5px;cursor: pointer;}
+p{height:40px;width:100%;vertical-align: middle;}
+p input{width:100px;height:30px;margin: 0 5px;font-size:18px;border-radius: 5px;}
+p button{width:60px;height:30px;background: red;border-radius: 5px;border:none;cursor: pointer;color:white;}
+table.tab{border-collapse: collapse;}
+
+.tab tr{width:100%;height:40px;}
+.tab td{width:90px;height:40px;border:1px solid;line-height: 40px;text-align: center;}
+.tab td input{vertical-align: middle;}
+.list_message{padding-left:90px;background: #DDDDDD;width: 100%;}
+.list_message tr{height:25px;}
+.list_message td{padding: 3px 0;}
+
+table.list_message td input{width:100px;height: 23px;margin:0 3px;}
+table.list_message td .btn{width:90px;height:25px;border-radius: 4px;background: red;color:white;margin:0 5px;}
+table.list_message .left-td{width: 180px;text-align: right;padding-right: 20px;}
+.list_nav{padding-left:10px;overflow: hidden;}
+.list_nav li{float:left;height:40px;line-height: 40px;font-size:16px;margin:0 15px;}
+.information{background: #EBEBEB;}
+.side_right{overflow: auto;height:560px;width: 100%;}
+.add_product{width: 100%;display: block;}
+.size{padding: 20px 0 0 20px;height:400px;background: #666666;width: 100%;}
+.des{display: none;width: 100%;}
+.others{display: none;width: 100%;}
+.attribute{display: none;width: 100%;}
+.photo{display: none;width: 100%;}
+.relative{display: none;width: 100%;}
+
+
+

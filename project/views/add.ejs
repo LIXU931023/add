@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="stylesheets/add.css"/>
+		<script src="javascripts/jquery-1.11.1.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="big">
+			
+		
+		<div class="add_product chanage">
+    		<div class="top">
+    			<h4>管理中心-商品列表</h4>
+    			<h5>添加新商品</h5>
+    		</div>
+    		<ul class= "list_nav">
+    			<li>通用信息</li>
+    			<li>详细描述</li>
+    			<li>其他信息</li>
+    			<li>商品属性</li>
+    			<li>商品相册</li>
+    			<li>关联商品</li>
+    			<li>配件</li>
+    			<li>关联文章</li>
+    		</ul>
+    		<div class="informations">
+    			<table border="0" cellspacing="" cellpadding="" class = "list_message">
+    				<tr><td class = "left-td">商品名称：</td><td ><input type="text" id = "goods_name" />
+    <select name="" id=""style="height:25px;">
+			<option value="">字体样式</option>
+			<option value="">加粗</option>
+			<option value="">斜体</option>
+			<option value="">下划线</option>
+			<option value="">删除线</option>
+		</select>
+    				</td></tr>
+    				<tr><td class = "left-td">商品货号：</td><td><input type="text" id = "size" /></td></tr>
+    				<tr><td class = "left-td">商品分类：</td><td><select name="" id="sel" style="height:25px;">
+    					<option value="">请选择...</option>
+			<option value="">T恤</option>
+			<option value="">短袖</option>
+			<option value="">裤子</option>
+			<option value="">外套</option>
+			<option value="">跑鞋</option><input type="button"value="添加分类" class = "btn"/></td></tr>
+    				<tr><td class = "left-td"> 扩展分类：</td><td><input type="button"value="添加"class = "btn"/><select name="" id="addsel" style="height:25px;">
+    					<option value="">请选择...</option>
+			<option value="">T恤</option>
+			<option value="">短袖</option>
+			<option value="">裤子</option>
+			<option value="">外套</option>
+			<option value="">跑鞋</option></td></tr>
+			<tr><td class = "left-td">商品品牌：</td><td><select name="" id="bigname" style="height:25px;">
+    					<option value="">请选择...</option>
+			<option value="">T恤</option>
+			<option value="">短袖</option>
+			<option value="">裤子</option>
+			<option value="">外套</option>
+			<option value="">跑鞋</option><input type="button"value="添加"class = "btn"/><input type="text"value=""/><input type="button" value="确定" class = "btn"/><input type="button" value="品牌管理" class = "btn"/><input type="button"value=">>"class = "btn"/></td></tr>
+			<tr><td class = "left-td">本店售价：</td>
+			<td><input type="text" id = "saleprice" />
+			<input type="button" value="按市场价计算" class = "btn" /></td></tr>
+			<tr><td class = "left-td">会员价格：</td>
+			<td>注册用户：（188.99）<input type="text" id = "count_1"/>代销用户：（170.9）<input type="text" id = "count_2" />vip：<input type="text" id = "count_3" /></td></tr>
+			<tr><td></td>
+			<td>会员价格为-1时表示会员价格按会员等级折扣率计算</td></tr>
+			<tr><td class = "left-td">商品优惠价格：</td>
+			<td> 优惠数量 <input type="text" />优惠价格<input type="text" id = "count_3" /></td></tr>
+			<tr><td></td>
+			<td>购买数量达到优惠数量时享受的优惠价格</td></tr>
+			<tr><td class = "left-td">市场售价：</td>
+			<td><input type="text" id = "marketprice" /><input type="button"value="取整数" class = "btn"/></td></tr>
+			<tr><td class = "left-td">虚拟销量：</td>
+			<td><input type="text"id = "count_4" /></td></tr>
+			<tr><td class = "left-td">赠送消费积分数：</td>
+			<td><input type="text" id="count_5" /></td></tr>
+			<tr><td></td>
+			<td>购买该商品时赠送消费积分数,-1表示按商品价格赠送</td></tr>
+			<tr><td class = "left-td">赠送等级积分数：</td>
+			<td><input type="text" id = "count_6" /></td></tr>
+			<tr><td></td>
+			<td>购买该商品时赠送等级积分数,-1表示按商品价格赠送</td></tr>
+			<tr><td class = "left-td">积分购买金额：</td>
+			<td><input type="text" id = "count_7" /></td></tr>
+			<tr><td></td>
+			<td> 	
+(此处需填写金额)购买该商品时最多可以使用积分的金额</td></tr>
+<tr><td class = "left-td"><input type="checkbox" name="" id="" value="" style="width:auto;vertical-align: middle;"/>足销价</td>
+			<td> 	
+<input type="text" name="" id="" value="" /></td></tr>
+<tr><td class = "left-td">促销日期：</td>
+			<td> 	
+<input type="date" name="" id="" value="" style="width: auto;"/>--<input type="date" name="" id="" value="" style="width: auto;"/></td></tr>
+<tr><td class = "left-td">上传图片：</td>
+			<td> 	
+<input type="file" name="" id="img" value="" style="width: auto;" /></td></tr>
+<tr><td></td>
+			<td> 	
+<input type="text" name="" id="url" value="图片外部URL地址" style="width:auto;"/></td></tr>
+<tr><td class = "left-td">上传商品缩略图：</td>
+			<td> 	
+<input type="file" name="" id="" value="" style="width: auto;"/></td></tr>
+<tr><td></td>
+			<td> 	
+<input type="text" name="" id="" value="商品缩略图外部URL地址"style="width:auto;" /></td></tr>
+<tr><td></td>
+			<td> 	
+<input type="checkbox" name="" id="" value="" checked="checked"style="width:auto;vertical-align: middle;"/>自动生成商品缩略图</td></tr>
+<tr><td></td>
+			<td> 	
+<input type="button" name="" id="" value="确定" onclick="addGoods()" class = "btn" /><input type="reset" name="" id="" value="重置"class = "btn" /></td></tr>
+
+			
+    			</table>
+    			
+    		</div>
+    		</div>
+    		<div class="des chanage">
+    		<div class="top">
+    			<h4>管理中心-商品列表</h4>
+    			<h5>添加新商品</h5>
+    		</div>
+    		<ul class= "list_nav">
+    			<li>通用信息</li>
+    			<li>详细描述</li>
+    			<li>其他信息</li>
+    			<li>商品属性</li>
+    			<li>商品相册</li>
+    			<li>关联商品</li>
+    			<li>配件</li>
+    			<li>关联文章</li>
+    		</ul>
+    		<div class="size">
+    			<textarea name="textarea" rows="20" cols="100" ></textarea>
+    		<p ><input type="button" value="确定"style="margin-left:200px;" /><input type="reset" value="重置" /></p>
+    		</div>
+    	</div>
+    	<div class="others chanage">
+    		<div class="top">
+    			<h4>管理中心-商品列表</h4>
+    			<h5>添加新商品</h5>
+    		</div>
+    		<ul class= "list_nav">
+    			<li>通用信息</li>
+    			<li>详细描述</li>
+    			<li>其他信息</li>
+    			<li>商品属性</li>
+    			<li>商品相册</li>
+    			<li>关联商品</li>
+    			<li>配件</li>
+    			<li>关联文章</li>
+    		</ul>
+    			<table border="0" cellspacing="" cellpadding="" class = "list_message" style="padding-top:20px;">
+    				<tr><td class ="left-td">商品重量：</td><td ><input type="text" style="width: auto;"/>
+    <select name="" id=""style="height:25px;">
+			<option value="">kg</option>
+			<option value="">g</option>
+		</select>
+    				</td></tr>
+    				<tr><td class = "left-td">商品库存数量：</td><td ><input type="text" style="width: auto;"/>
+    				<tr><td></td>
+			<td>库存在商品为虚货或商品存在货品时为不可编辑状态，库存数值取决于其虚货数量或货品数量</td></tr>
+			<tr><td class = "left-td">库存警告数量：</td><td ><input type="text" style="width: auto;"/></td></tr>
+			<tr><td class = "left-td">库存警加入推荐：</td><td ><label><input type="checkbox" style="width: auto;"/>精品</label><label><input type="checkbox"style="width: auto;" /> 热销 </label><label><input type="checkbox" style="width: auto;"/>新品</label></td></tr>
+			<tr><td class = "left-td">上架：</td><td ><label><input type="checkbox" checked="checked" style="width: auto;"/> 打勾表示允许销售，否则不允许销售。</label></td></tr>
+			<tr><td class = "left-td">能作为普通商品销售：</td><td ><label><input type="checkbox" checked="checked"style="width: auto;"/> 打勾表示能作为普通商品销售，否则只能作为配件或赠品销售。</label></td></tr>
+			<tr><td class = "left-td">是否为免运费商品:</td><td ><label><input type="checkbox"style="width: auto;" />  打勾表示此商品不会产生运费花销，否则按照正常运费计算</label></td></tr>
+			<tr><td class = "left-td">商品关键词：</td><td ><input type="text" style="width: auto;"/>  用空格分隔</td></tr>
+			<tr><td class = "left-td">商品简单描述：</td><td ><textarea name="" id="" cols="30" rows="5"></textarea></td></tr>
+			<tr><td class = "left-td">商家备注：</td><td ><textarea name="" id="" cols="30" rows="5"></textarea></td></tr>
+    	<tr><td></td>
+			<td> 	
+<input type="button" name="" id="" value="确定" class = "btn" /><input type="reset" name="" id="" value="重置"class = "btn" /></td></tr>
+    			</table>
+    	</div>
+    	<div class="attribute chanage">
+    		<div class="top">
+    			<h4>管理中心-商品列表</h4>
+    			<h5>添加新商品</h5>
+    		</div>
+    		<ul class= "list_nav">
+    			<li>通用信息</li>
+    			<li>详细描述</li>
+    			<li>其他信息</li>
+    			<li>商品属性</li>
+    			<li>商品相册</li>
+    			<li>关联商品</li>
+    			<li>配件</li>
+    			<li>关联文章</li>
+    		</ul>
+    			<table border="0" cellspacing="" cellpadding="" class = "list_message">
+    				<tr><td class = "left-td">商品内容：</td><td >
+    <select name="" id=""style="height:25px;">
+			<option value="">书</option>
+			<option value="">音乐</option>
+			<option value="">电影</option>
+			<option value="">小说</option>
+			<option value="">电视</option>
+		</select>
+    				</td></tr>
+    				<tr><td></td>
+			<td>请选择商品的所属类型，进而完善此商品的属性</td></tr>
+		<tr><td></td>
+			<td> 	
+<input type="button" name="" id="" value="确定" class = "btn" /><input type="reset" name="" id="" value="重置"class = "btn" /></td></tr>
+
+    			</table>
+    	</div>
+    	<div class="photo chanage">
+    		<div class="top">
+    			<h4>管理中心-商品列表</h4>
+    			<h5>添加新商品</h5>
+    		</div>
+    		<ul class= "list_nav">
+    			<li>通用信息</li>
+    			<li>详细描述</li>
+    			<li>其他信息</li>
+    			<li>商品属性</li>
+    			<li>商品相册</li>
+    			<li>关联商品</li>
+    			<li>配件</li>
+    			<li>关联文章</li>
+    		</ul>
+    			<table border="0" cellspacing="" cellpadding="" class = "list_message">
+    				<tr><td class = "left-td"style="width:600px;text-align: center;">图片描述<input type="text" style="width: 100px;"/>上传文件<input type="file" style="width: 150px;"/>
+    <input type="text" value="http://"style="width: 150px;" />
+    				</td></tr>
+    				
+			
+		<tr>
+			<td style="text-align: center;"> 	
+<input type="button" name="" id="" value="确定" class = "btn" /><input type="reset" name="" id="" value="重置"class = "btn" /></td></tr>
+
+    			</table>
+    	</div>
+    	<div class="relative chanage" >
+    		<div class="top">
+    			<h4>管理中心-商品列表</h4>
+    			<h5>添加新商品</h5>
+    		</div>
+    		<ul class= "list_nav">
+    			<li>通用信息</li>
+    			<li>详细描述</li>
+    			<li>其他信息</li>
+    			<li>商品属性</li>
+    			<li>商品相册</li>
+    			<li>关联商品</li>
+    			<li>配件</li>
+    			<li>关联文章</li>
+    		</ul>
+    		<p><input type="text" style="width: 140px;"/><input type="button" value="搜索"style="color:white;background: red;width:60px"/></p>
+    	</div>
+    		
+    	
+    	</div>
+	</body>
+</html>
+<script type="text/javascript">
+	$(".list_nav li").click(function(){
+		var index = $(this).index();
+		$(".chanage").eq(index).show().siblings().hide();
+	})
+    function addGoods(){
+        var ajax = new XMLHttpRequest();
+        ajax.open('post','/api/add');
+        ajax.onreadystatechange = function(res){
+
+        }
+        var form = new FormData();
+        form.append('goods_name',$("#goods_name").val());
+        form.append('size',$("#size").val());
+        form.append('sel',$("#sel").val());
+        form.append('addsel',$("#addsel").val());
+        form.append('bigname',$("#bigname").val());
+        form.append('saleprice',$("#saleprice").val());
+        form.append('count_1',$("#count_1").val());
+        form.append('count_2',$("#count_2").val());
+        form.append('count_3',$("#count_3").val());
+        form.append('count_4',$("#count_4").val());
+        form.append('count_5',$("#count_5").val());
+        form.append('count_6',$("#count_6").val());
+        form.append('count_7',$("#count_7").val());
+        form.append('img',document.getElementById("img").files[0]);
+        ajax.send(form);
+    }
+</script>
